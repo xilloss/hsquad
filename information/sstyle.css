@@ -1,0 +1,161 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.penalty-table {
+    min-width: 600px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    padding: 30px 20px 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 20px 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.penalty-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 800px;
+}
+
+.penalty-table th {
+    color: white;
+    padding: 15px 12px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.penalty-table td {
+    padding: 15px 12px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.penalty-table .violation-type {
+    text-align: left;
+    font-weight: 600;
+    background-color: #d60000;
+}
+
+.violation-examples {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #9b9b9b;
+    margin-top: 5px;
+}
+
+
+.category-minor td {
+    background-color: #55503e;
+}
+
+.category-minor .violation-type {
+    background-color: #413a27;
+    border-left: 4px solid #ffc107;
+}
+
+.category-medium td {
+    background-color: #5f5046;
+}
+
+.category-medium .violation-type {
+    background-color: #4e3d32;
+    border-left: 4px solid #fd7e14;
+}
+
+.category-serious td {
+    background-color: #4b4141;
+}
+
+.category-serious .violation-type {
+    background-color: #423232;
+    border-left: 4px solid #dc3545;
+}
+
+.category-critical td {
+    background-color: #3f3849;
+}
+
+.category-critical .violation-type {
+    background-color: #3f3552;
+    border-left: 4px solid #6f42c1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 20px;
+        padding: 15px 10px 5px;
+    }
+    
+    .subtitle {
+        font-size: 12px;
+        padding: 0 10px 15px;
+    }
+    
+    .penalty-table {
+        font-size: 11px;
+        min-width: 500px;
+    }
+    
+    .penalty-table th,
+    .penalty-table td {
+        padding: 8px 6px;
+    }
+    
+    .violation-examples {
+        font-size: 9px;
+    }
+    
+    .legend-items {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
