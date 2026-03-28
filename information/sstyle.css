@@ -28,20 +28,7 @@ body {
     width: 100%;
 }
 
-.title {
-    text-align: center;
-    font-size: 36px;
-    color: #ffffff;
-    padding: 30px 20px 10px;
-}
 
-.subtitle {
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff;
-    padding: 0 20px 30px;
-    border-bottom: 2px solid #f0f0f0;
-}
 
 .table-wrapper {
     overflow-x: auto;

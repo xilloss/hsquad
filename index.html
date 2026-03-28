@@ -21,26 +21,25 @@
 </html>
 
 <script>
-// Глобальный обработчик неверных URL
+
 (function() {
     const currentPath = window.location.pathname;
     
-    // Список правильных URL на вашем сайте
     const validUrls = [
         '/',
         '/index.html',
         '/information/',
         '/information/sanctions.html',
+        '/information/index.html',
         '/images/',
         '/style.css'
     ];
     
-    // Проверяем, заканчивается ли URL на .html, .css, .js, .png и т.д.
+
     const hasExtension = /\.(html|css|js|png|jpg|jpeg|gif|svg|ico)$/i.test(currentPath);
     
-    // Если не файл и не в списке валидных
     if (!hasExtension && !validUrls.includes(currentPath) && currentPath !== '/404.html') {
-        // Перенаправляем на 404
+
         window.location.href = '/404.html?redirect=' + encodeURIComponent(currentPath);
     }
 })();
