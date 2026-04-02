@@ -38,9 +38,9 @@
 
     const hasExtension = /\.(html|css|js|png|jpg|jpeg|gif|svg|ico)$/i.test(currentPath);
     
-    if (!hasExtension && !validUrls.includes(currentPath) && currentPath !== '/404.html') {
+    if (!hasExtension && !validUrls.includes(currentPath) && currentPath !== 'index.html') {
 
-        window.location.href = '/404.html?redirect=' + encodeURIComponent(currentPath);
+        window.location.href = '/404.html?redirect=';
     }
 })();
 </script>
